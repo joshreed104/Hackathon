@@ -2,13 +2,19 @@
     console.log('!');
     const newDiv = document.createElement('div');
     document.querySelector('body').appendChild(newDiv);
-    document.getElementsByClassName('header__main').appendChild(newDiv)
     const dogPic = document.createElement('img');
     dogPic.setAttribute('id', 'dogPic');
+    dogPic.style.backgroundImage = 'url("../frame.png")';
+    dogPic.style.backgroundRepeat = 'no-repeat'
+    dogPic.style.backgroundSize = 'cover'
     dogPic.style.display = 'block';
     dogPic.style.marginLeft = 'auto';
     dogPic.style.marginRight = 'auto';
-    dogPic.style.border = '20px solid red';
+    dogPic.style.marginTop = '100px'
+    dogPic.style.maxHeight = '700px'
+    dogPic.style.maxWidth = '700px'
+    dogPic.style.border = '5px groove grey';
+    dogPic.style.padding = '20px';
     dogPic.style.imag = 'auto';
     newDiv.appendChild(dogPic);
     // chrome.runtime.sendMessage('loaded', function(link){
@@ -38,10 +44,10 @@
 
 document.querySelector('body').insertAdjacentElement("beforebegin", newDiv);
 
-const newHeader = document.createElement('h1');
-newHeader.innerText = "Hello?";
-const website = document.querySelector('body');
-website.appendChild(newHeader);
+// const newHeader = document.createElement('h1');
+// newHeader.innerText = "Hello?";
+// const website = document.querySelector('body');
+// website.appendChild(newHeader);
 // chrome.runtime.sendMessage('loaded', function(link){
 //     dogPic.src = link;
 // })
