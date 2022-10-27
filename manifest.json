@@ -7,11 +7,9 @@
         {
         "js" : ["./scripts/content.js"],
         "css": ["./styles.css"],
-        "matches": ["http://*/*"]
+        "matches": ["http://*/*", "https://*/*"]
         }
     ],
-    "icons": {
-        "16": "/shiba.jpg"
-    },
-    "permissions" : ["tabs", "activeTab", "scripting"] 
+    "permissions" : ["tabs", "activeTab", "http://*/*", "scripting"] 
+
   }
