@@ -10,6 +10,8 @@
         "matches": ["http://*/*"]
         }
     ],
+    "icons": {
+        "16": "/shiba.jpg"
+    },
     "permissions" : ["tabs", "activeTab", "scripting"] 
-
   }
